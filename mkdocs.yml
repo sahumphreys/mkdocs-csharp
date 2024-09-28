@@ -1,0 +1,216 @@
+# ---- GENERAL
+site_name: Programming with C#
+
+# ---- THEME
+theme:
+  name: material
+  icon:
+    logo: material/language-csharp
+  palette: 
+    - scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/lightbulb 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto-mono
+  features:
+    - navigation.tabs
+    # - navigation.sections
+    # - navigation.expand
+    - navigation.prune
+    - navigation.instant
+    - navigation.footer
+    # - toc.integrate
+    - toc.follow
+    - navigation.top
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy  
+
+# ---- NAVIGATION
+nav:
+  - Home: index.md
+  - Chapters:
+    - Introduction:
+      - 'What does it mean to program?': './chapters/01_introduction/01_introductionToCSharp.md'
+      - 'Some History': './chapters/01_introduction/02_some_history.md'
+      - 'A First Program': './chapters/01_introduction/03_first_program.md'
+      - 'Display to the screen': './chapters/01_introduction/04_printing_to_the_screen.md'
+      - Questions: 'chapters/01_introduction/05_questions.md'
+      - High Level and Low Level*: './chapters/01_introduction/06_high_vs_low.md'
+    - Data Types and Variables:
+      - './chapters/02_datatypes_and_variables/index.md'
+      - 'Variables and Constants': './chapters/02_datatypes_and_variables/01_variables.md'
+      - 'Data Types': './chapters/02_datatypes_and_variables/02_data_types.md'
+      - Questions: './chapters/02_datatypes_and_variables/03_questions.md'
+      - Crash Course in Binary*: './chapters/02_datatypes_and_variables/04_crash_course_in_binary.md'
+    - Operators and Errors:
+      - './chapters/03_operators_errors/index.md'
+      - Arithmetic: './chapters/03_operators_errors/01_arithmetic_operators.md'
+      - Comparison: './chapters/03_operators_errors/02_comparison_operators.md'
+      - Assignment: './chapters/03_operators_errors/03_assignment_operator.md'
+      - Logical and Bitwise: './chapters/03_operators_errors/04_logical_bitwise_operators.md'
+      - Type Conversion: './chapters/03_operators_errors/05_type_conversion.md'
+      - Errors and Exceptions: './chapters/03_operators_errors/06_errors_exceptions.md'
+      - Programming Task: './chapters/03_operators_errors/07_programming_task.md'
+      - Questions: './chapters/03_operators_errors/08_questions.md'
+      - Random Numbers*: './chapters/03_operators_errors/09_random_number_generation.md'
+    - Using the Console:
+      - './chapters/04_using_the_console/index.md'
+      - Output: './chapters/04_using_the_console/01_output.md'
+      - Input: './chapters/04_using_the_console/02_input.md'
+      - Ascii and Unicode: './chapters/04_using_the_console/03_ascii_unicode.md'
+      - Programming Task: './chapters/04_using_the_console/04_programming_task.md'
+      - Questions: './chapters/04_using_the_console/05_questions.md'
+      - Input and Output*: './chapters/04_using_the_console/06_input_output.md'
+    - Decisions:
+      - './chapters/05_decisions/index.md'
+      - Selection: './chapters/05_decisions/01_making_a_choice.md'
+      - Switch: './chapters/05_decisions/02_switch.md'
+      - Programming Task: './chapters/05_decisions/03_programming_task.md'
+      - Questions: './chapters/05_decisions/04_questions.md'
+      - Boolean Logic*: './chapters/05_decisions/05_boolean_logic.md'
+    - Iteration:
+      - './chapters/06_iteration/index.md'
+      - WHILE loop: './chapters/06_iteration/01_while_loop.md'
+      - DO..WHILE loop: './chapters/06_iteration/02_do_while_loop.md'
+      - FOR loop: './chapters/06_iteration/03_for_loop.md'
+      - Pseudocode: './chapters/06_iteration/04_pseudocode.md'
+      - Examples: './chapters/06_iteration/05_loop_examples.md'
+      - Programming Task: './chapters/06_iteration/06_programming_task.md'
+      - Questions: './chapters/06_iteration/07_questions.md'
+      - Parity, Check Digits*: './chapters/06_iteration/08_parity_check_digits.md'
+    - Arrays:
+      - './chapters/07_arrays/index.md'
+      - Declaring Arrays: './chapters/07_arrays/01_declaring_arrays.md'
+      - Accessing Array Elements: './chapters/07_arrays/02_accessing_elements_arrays.md'
+      - Sorting Array Elements: './chapters/07_arrays/03_sorting_elements_arrays.md'
+      - 2D Arrays: './chapters/07_arrays/04_2d_arrays.md'
+      - Jagged Arrays: './chapters/07_arrays/05_jagged_arrays.md'
+      - Lists: './chapters/07_arrays/06_lists.md'
+      - Programming Task: './chapters/07_arrays/07_programming_task.md'
+      - Questions: './chapters/07_arrays/08_questions.md'
+      - Big O Notation*: './chapters/07_arrays/09_big_O_notation.md'
+    - Strings and Encryption:
+      - './chapters/08_strings_encryption/index.md'
+      - Declaring Strings: './chapters/08_strings_encryption/01_declaring_strings.md'
+      - String Methods: './chapters/08_strings_encryption/02_string_methods.md'
+      - Regular Expressions: './chapters/08_strings_encryption/03_regular_expressions.md'
+      - Programming Task: './chapters/08_strings_encryption/04_programming_task.md'
+      - Questions: './chapters/08_strings_encryption/05_questions.md'
+      - Data Compression*: './chapters/08_strings_encryption/06_data_compression.md'
+    - Methods:
+      - './chapters/09_methods/index.md'
+      - Declaring and Calling Methods: './chapters/09_methods/01_declaring_calling_methods.md'
+      - Parameters: './chapters/09_methods/02_parameters.md'
+      - Value and Reference Parameters: './chapters/09_methods/03_value_reference_parameters.md'
+      - Overloading Methods: './chapters/09_methods/04_overloading_methods.md'
+      - Hierarchy Charts: './chapters/09_methods/05_hierarchy_charts.md'
+      - Advantages of Methods: './chapters/09_methods/06_advantages.md'
+      - Programming Task: './chapters/09_methods/07_programming_task.md'
+      - Questions: './chapters/09_methods/08_questions.md'
+      - Call Stack*: './chapters/09_methods/09_call_stack.md'
+    - Recursion:
+      - './chapters/10_recursion/index.md'
+      - Recursion Explained: './chapters/10_recursion/01_recursion_explained.md'
+      - Recursion Implemented: './chapters/10_recursion/02_recursion_implemented.md'
+      - Examples: './chapters/10_recursion/03_examples.md'
+      - Thinking Recursively: './chapters/10_recursion/04_thinking_recursively.md'
+      - Programming Task: './chapters/10_recursion/05_programming_task.md'
+      - Questions: './chapters/10_recursion/06_questions.md'
+      - Computational Thinking: './chapters/10_recursion/07_computational_thinking.md'
+    - Text Files:
+      - './chapters/11_text_files/index.md'
+      - Streams: './chapters/11_text_files/01_streams.md'
+      - Writing to a file: './chapters/11_text_files/02_writing_to_a_file.md'
+      - Reading from a file: './chapters/11_text_files/03_reading_from_a_file.md'
+      - CSV files: './chapters/11_text_files/04_csv_files.md'
+      - Struct: './chapters/11_text_files/05_struct.md'
+      - Programming Task: './chapters/11_text_files/06_programming_task.md'
+      - Questions: './chapters/11_text_files/07_questions.md'
+      - Finite State Machines: './chapters/11_text_files/08_finite_state_machines.md'
+    - Binary Files:
+      - './chapters/12_binary_files/index.md'
+      - Reading and Writing: './chapters/12_binary_files/01_binary_files.md'
+      - XML Files: './chapters/12_binary_files/02_xml_files.md'
+      - Serialization: './chapters/12_binary_files/03_serialization.md'
+      - JSON Files: './chapters/12_binary_files/04_json_files.md'
+      - Programming Task: './chapters/12_binary_files/05_programming_task.md'
+      - Questions: './chapters/12_binary_files/06_questions.md'
+      - Networking*: './chapters/12_binary_files/07_networking.md'
+    - PROJECT:
+      - './chapters/13_project/index.md'
+      - Scenario: './chapters/13_project/01_scenario.md'
+      - Design Tasks: './chapters/13_project/02_design_tasks.md'
+      - Challenge Task: './chapters/13_project/03_challenge_tasks.md'
+      - Further Challenge: './chapters/13_project/04_further_challenge.md'
+    - Appendix:
+      - Useful Resources: './chapters\14_appendix\A1_UsefulResources.md'
+      - Solutions: './chapters/14_appendix/A2_Solutions.md'
+      - Visual Studio: './chapters/14_appendix/A3_VisualStudio.md'
+      - Visual Studio Code: './chapters/14_appendix/A4_UsingVisualStudioCode.md'
+      - Using GitHub: './chapters/14_appendix/A5_GitHub.md'
+      - Unit Testing: './chapters/14_appendix/A6_UnitTesting.md'
+      - From Python To C#: './chapters/14_appendix/A7_FromPythonToCSharp.md'
+  - about.md
+
+
+# ---- PLUGINS
+plugins:
+  - search
+  - macros
+    
+# ---- EXTRA
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of the material and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make it better.
+
+# ---- MARKDOWN EXTENSIONS
+markdown_extensions:
+  - admonition
+  - footnotes
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+      auto_title: false
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+
+# ---- EXTRA CSS
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+extra_javascript:
+  - assets/js/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+copyright: >
+  Copyright &copy; 2016 - 2024 SAH | <a href="#__consent">Change cookie settings</a>
